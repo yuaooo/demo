@@ -1,0 +1,976 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &153040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428060}
+  - component: {fileID: 11462272}
+  m_Layer: 0
+  m_Name: DB_Perk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11462272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a22874220cff5c47bb586a284f9239a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perkList:
+  - ID: 0
+    name: HitPoint
+    icon: {fileID: 21300000, guid: 561d76f4749aa5e48b89547657985e99, type: 3}
+    desp: Each point increase hitpoint capacity by 5 and hit point regeneration by
+      .25 per sec
+    type: 0
+    repeatable: 1
+    limit: 10
+    purchased: 0
+    cost: 1
+    minLevel: 0
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 5
+    hitPointCap: 5
+    hitPointRegen: 0.25
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: 0
+    replaceExisting: 0
+    replaceWeaponID: 0
+    appliedToAllWeapon: 1
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: 5
+    replaceAbilityID: 0
+    appliedToAllAbility: 0
+    abilityIDList: 0000000001000000
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 154016, guid: 12f184c2eaaf01d4eb76e0842c4ce25a, type: 3}
+  - ID: 1
+    name: Energy
+    icon: {fileID: 21300000, guid: f0dbca2397a55ab4cb86061223f90760, type: 3}
+    desp: Each point increase energy capacity by 10 and energy regeneration by 1
+      per sec
+    type: 0
+    repeatable: 1
+    limit: 10
+    purchased: 0
+    cost: 1
+    minLevel: 0
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 10
+    energyCap: 10
+    energyRegen: 0.25
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 1
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 2
+    name: Damage
+    icon: {fileID: 21300000, guid: d4d17b4eebfdd4c43bfaafe1cb1671e3, type: 3}
+    desp: Each point increase damage by 10% and critical chance by 5%
+    type: 0
+    repeatable: 1
+    limit: 10
+    purchased: 0
+    cost: 1
+    minLevel: 0
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0.1
+    critChanceMul: 0.05
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 3
+    name: Speed
+    icon: {fileID: 21300000, guid: 1d2b41fdf0a805b4e90075b0128ff078, type: 3}
+    desp: Each point increase speed by 10%
+    type: 0
+    repeatable: 1
+    limit: 6
+    purchased: 0
+    cost: 1
+    minLevel: 0
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0.2
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: 3
+    replaceExisting: 1
+    replaceWeaponID: 0
+    appliedToAllWeapon: 1
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: 0
+    replaceAbilityID: 0
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 4
+    name: Fast Learner
+    icon: {fileID: 21300000, guid: 94420edb7b572ff4984a8791789b8ff7, type: 3}
+    desp: +10% experience gain
+    type: 0
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0.1
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 5
+    name: Shockwave
+    icon: {fileID: 21300000, guid: 88e3aa5e2ad1f144687be3a2b5cb48bd, type: 3}
+    desp: Gain new ability 'Shockwave' - Damage and stun all surrounding hostile
+    type: 3
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 3
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: 8
+    replaceAbilityID: 0
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 6
+    name: Improved Shockwave
+    icon: {fileID: 21300000, guid: 88e3aa5e2ad1f144687be3a2b5cb48bd, type: 3}
+    desp: Reduce cooldown of shockwave by 25%
+    type: 4
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 2
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 050000000e000000
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 0
+    abilityIDList: 0800000000000000
+    abCost: 0
+    abCooldown: -0.25
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 15
+    name: Ultimate Shockwave
+    icon: {fileID: 21300000, guid: 88e3aa5e2ad1f144687be3a2b5cb48bd, type: 3}
+    desp: Increase damage of shockwave by 100%
+    type: 4
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 2
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 06000000
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 0
+    abilityIDList: 0800000000000000
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 1
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 14
+    name: Energized
+    icon: {fileID: 21300000, guid: ef26ace470349c549a6ec8243baa55cb, type: 3}
+    desp: Increase energy capacity by 5 and energy regeneration rate by .5/sec
+    type: 0
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 5
+    energyRegen: 0.5
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 7
+    name: Armor Penetrating Round
+    icon: {fileID: 21300000, guid: f4023c0da7e9aa54486aae0b75e2597f, type: 3}
+    desp: Increase the damage of mechine gun and shot gun by 50%
+    type: 2
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 0000000002000000
+    weapDmg: 0.5
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 0
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 8
+    name: Fast Trigger
+    icon: {fileID: 21300000, guid: 5b1cbac9bff093e418e45485f2bec272, type: 3}
+    desp: Reduce cooldown and reload time of shot gun by 30%
+    type: 2
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 07000000
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 02000000
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0.3
+    weapClipSize: 0.3
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 9
+    name: Precision Strike
+    icon: {fileID: 21300000, guid: 88c14496401507e4e9f153eba8a7e173, type: 3}
+    desp: 30% more likely to score a cirtical hit with machine gun
+    type: 2
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 07000000
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0.3
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 10
+    name: Extend Magazine
+    icon: {fileID: 21300000, guid: 86376da8e57a0a3478e9ff066476e0e3, type: 3}
+    desp: Increase clip size of machine gun by 100%
+    type: 2
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 2
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 09000000
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 00000000
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 1
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}
+  - ID: 11
+    name: Laser Sight
+    icon: {fileID: 21300000, guid: 9231d4f9684d1774d85c057fa6c0e31b, type: 3}
+    desp: 'Attach a laser sight to weapon which helps in aiming and look cool. '
+    type: 5
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 1
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 154016, guid: 12f184c2eaaf01d4eb76e0842c4ce25a, type: 3}
+  - ID: 12
+    name: Peroidic Fire
+    icon: {fileID: 21300000, guid: 002270dc0ff74e1428910026bb681ac4, type: 3}
+    desp: Fire energy bolt in all direction at random interval
+    type: 5
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 2
+    minLevel: 2
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 101444, guid: 3d5c0d74241f6294b929dbc58a60ed81, type: 3}
+  - ID: 13
+    name: Auto Repair
+    icon: {fileID: 21300000, guid: 8fdbb2c73baadeb429434e4fd051471c, type: 3}
+    desp: Hit point regenerate over time
+    type: 0
+    repeatable: 0
+    limit: 0
+    purchased: 0
+    cost: 1
+    minLevel: 3
+    minPerkPoint: 0
+    prereq: 
+    player: {fileID: 0}
+    hitPoint: 0
+    hitPointCap: 0
+    hitPointRegen: 0.5
+    energy: 0
+    energyCap: 0
+    energyRegen: 0
+    moveSpeedMul: 0
+    dmgMul: 0
+    critChanceMul: 0
+    CritMultiplierMul: 0
+    expGainMul: 0
+    creditGainMul: 0
+    scoreGainMul: 0
+    hitPointGainMul: 0
+    energyGainMul: 0
+    newWeaponID: -1
+    replaceExisting: 0
+    replaceWeaponID: -1
+    appliedToAllWeapon: 0
+    weaponIDList: 
+    weapDmg: 0
+    weapCrit: 0
+    weapCritMul: 0
+    weapAOE: 0
+    weapRange: 0
+    weapCooldown: 0
+    weapClipSize: 0
+    weapAmmoCap: 0
+    weapReloadDuration: 0
+    weapRecoilMagnitude: 0
+    weapEffectID: -1
+    weapAbilityID: -1
+    newAbilityID: -1
+    replaceAbilityID: -1
+    appliedToAllAbility: 1
+    abilityIDList: 
+    abCost: 0
+    abCooldown: 0
+    abRange: 0
+    abDmg: 0
+    abCrit: 0
+    abCritMul: 0
+    abAOE: 0
+    abEffectID: -1
+    customObject: {fileID: 0}

@@ -1,0 +1,496 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &153946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468304}
+  - component: {fileID: 11400830}
+  m_Layer: 0
+  m_Name: DB_Ability
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &468304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b992c0f82ad1d641b4ba3a359993771, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityList:
+  - ID: 0
+    name: Shockwave
+    icon: {fileID: 21300000, guid: 268ce643057eadb4689b332c18f46449, type: 3}
+    desp: Damage and stun all surrounding hostile
+    type: 1
+    moveType: 0
+    duration: 0.2
+    cost: 2
+    cooldown: 10
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 10
+      damageMax: 15
+      aoeRadius: 10
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 15
+      explosionForce: 50
+      effectID: -1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 114652, guid: 76665628e08d7eb45bd8310353f319e3, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 1
+    name: AOE Stun
+    icon: {fileID: 21300000, guid: 66dbdb397006d4e4e837f1dce393f525, type: 3}
+    desp: 
+    type: 0
+    moveType: 0
+    duration: 0.2
+    cost: 10
+    cooldown: 10
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 1
+      damageMax: 3
+      aoeRadius: 15
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 20
+      effectID: 1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 114652, guid: 76665628e08d7eb45bd8310353f319e3, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 2
+    name: Field Repair
+    icon: {fileID: 21300000, guid: 30d450cf9c95b20439cb0c2cb68ac550, type: 3}
+    desp: 
+    type: 3
+    moveType: 0
+    duration: 0.2
+    cost: 10
+    cooldown: 10
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 50
+      effectID: 4
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 153048, guid: a183cf997f1ec1a489e9a9cd36e26d53, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 3
+    name: Mini Nuke
+    icon: {fileID: 21300000, guid: 7fc2feeea71aefb4f8a3ec88c93e7e51, type: 3}
+    desp: 
+    type: 4
+    moveType: 0
+    duration: 0.2
+    cost: 10
+    cooldown: 10
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 20
+      damageMax: 40
+      aoeRadius: 5
+      diminishingAOE: 1
+      critChance: 0.15
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 8
+      explosionForce: 30
+      effectID: -1
+      effectIdx: -1
+    range: 10
+    shootObject: {fileID: 156386, guid: 234ba0cc6d6e290488a387417cff8e6c, type: 3}
+    shootPosOffset: {x: 0, y: 1, z: 1}
+    launchObj: {fileID: 0}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 4
+    name: AP Shot
+    icon: {fileID: 21300000, guid: f84dafb7a8ef6fb4e977200d5dd4c392, type: 3}
+    desp: 
+    type: 4
+    moveType: 0
+    duration: 0.2
+    cost: 1
+    cooldown: 1
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 10
+      damageMax: 20
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0.15
+      critMultiplier: 2
+      impactForce: 2
+      explosionRadius: 0
+      explosionForce: 5
+      effectID: -1
+      effectIdx: -1
+    range: 40
+    shootObject: {fileID: 150996, guid: 379e5349388bf79439752c88f2bde364, type: 3}
+    shootPosOffset: {x: 0, y: 1, z: 1}
+    launchObj: {fileID: 0}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 5
+    name: Shield Up
+    icon: {fileID: 21300000, guid: 36d4334467d3aed4abc8621a0357f71f, type: 3}
+    desp: 
+    type: 3
+    moveType: 0
+    duration: 0.2
+    cost: 10
+    cooldown: 10
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 5
+      effectID: 9
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 147716, guid: 6d89013324a77204a99dd5bbd4706007, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 6
+    launchSFX: {fileID: 0}
+  - ID: 6
+    name: BulletStorm
+    icon: {fileID: 21300000, guid: 28d1902e88d9d7a4ebe7d37363de8131, type: 3}
+    desp: 
+    type: 6
+    moveType: 0
+    duration: 0.2
+    cost: 5
+    cooldown: 10
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 5
+      effectID: -1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 161596, guid: 2445fec175591754b9d2bf545133208f, type: 3}
+    autoDestroyLaunchObj: 0
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 7
+    name: DestroyAll
+    icon: {fileID: 21300000, guid: 8fb8fee5a7be32241b8b66e34c612c5c, type: 3}
+    desp: 
+    type: 2
+    moveType: 0
+    duration: 0.2
+    cost: 10
+    cooldown: 5
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 999
+      damageMax: 999
+      aoeRadius: 5
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 20
+      effectID: -1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 114652, guid: 76665628e08d7eb45bd8310353f319e3, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 8
+    name: Shockwave II
+    icon: {fileID: 21300000, guid: 268ce643057eadb4689b332c18f46449, type: 3}
+    desp: Damage and stun all surrounding hostile
+    type: 1
+    moveType: 0
+    duration: 0.2
+    cost: 5
+    cooldown: 10
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 15
+      damageMax: 20
+      aoeRadius: 10
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 15
+      explosionForce: 50
+      effectID: -1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 114652, guid: 76665628e08d7eb45bd8310353f319e3, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 9
+    name: AOE Stun II
+    icon: {fileID: 21300000, guid: 66dbdb397006d4e4e837f1dce393f525, type: 3}
+    desp: 
+    type: 0
+    moveType: 0
+    duration: 0.2
+    cost: 6
+    cooldown: 10
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 3
+      damageMax: 5
+      aoeRadius: 15
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 20
+      effectID: 1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 114652, guid: 76665628e08d7eb45bd8310353f319e3, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 10
+    name: Field Repair II
+    icon: {fileID: 21300000, guid: 30d450cf9c95b20439cb0c2cb68ac550, type: 3}
+    desp: 
+    type: 3
+    moveType: 0
+    duration: 0.2
+    cost: 5
+    cooldown: 8
+    currentCD: -0.5090268
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 0
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 50
+      effectID: 4
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 153048, guid: a183cf997f1ec1a489e9a9cd36e26d53, type: 3}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 11
+    name: Mini Nuke II
+    icon: {fileID: 21300000, guid: 7fc2feeea71aefb4f8a3ec88c93e7e51, type: 3}
+    desp: 
+    type: 4
+    moveType: 0
+    duration: 0.2
+    cost: 10
+    cooldown: 10
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 30
+      damageMax: 50
+      aoeRadius: 6.5
+      diminishingAOE: 1
+      critChance: 0.15
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 8
+      explosionForce: 30
+      effectID: -1
+      effectIdx: -1
+    range: 10
+    shootObject: {fileID: 156386, guid: 234ba0cc6d6e290488a387417cff8e6c, type: 3}
+    shootPosOffset: {x: 0, y: 1, z: 1}
+    launchObj: {fileID: 0}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 12
+    name: Teleport
+    icon: {fileID: 21300000, guid: b25ee41516f118247bd939403078d448, type: 3}
+    desp: 
+    type: 5
+    moveType: 2
+    duration: 0.2
+    cost: 2
+    cooldown: 5
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 0
+      effectID: -1
+      effectIdx: -1
+    range: 9999
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 0}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 13
+    name: Dash
+    icon: {fileID: 21300000, guid: 3b40f51aaaea51c438a3cd248059cb1b, type: 3}
+    desp: 
+    type: 5
+    moveType: 1
+    duration: 0.1
+    cost: 3
+    cooldown: 0.2
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 0
+      effectID: -1
+      effectIdx: -1
+    range: 6
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 0}
+    autoDestroyLaunchObj: 1
+    launchObjActiveDuration: 2
+    launchSFX: {fileID: 0}
+  - ID: 14
+    name: Guardian Shield
+    icon: {fileID: 21300000, guid: 36d4334467d3aed4abc8621a0357f71f, type: 3}
+    desp: 
+    type: 6
+    moveType: 0
+    duration: 0.2
+    cost: 5
+    cooldown: 30
+    currentCD: 0
+    aStats:
+      damageType: 0
+      damageMin: 0
+      damageMax: 0
+      aoeRadius: 0
+      diminishingAOE: 1
+      critChance: 0
+      critMultiplier: 2
+      impactForce: 0
+      explosionRadius: 0
+      explosionForce: 0
+      effectID: -1
+      effectIdx: -1
+    range: 20
+    shootObject: {fileID: 0}
+    shootPosOffset: {x: 0, y: 1, z: 0}
+    launchObj: {fileID: 167184, guid: df0186eca31be2f4bba0f4507fe35df1, type: 3}
+    autoDestroyLaunchObj: 0
+    launchObjActiveDuration: 10
+    launchSFX: {fileID: 0}

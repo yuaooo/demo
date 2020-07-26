@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &152890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411604}
+  - component: {fileID: 11442584}
+  m_Layer: 0
+  m_Name: DB_Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11442584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236efb44c437f6c4ea07a8f237f9b4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectList:
+  - ID: 0
+    name: Slow
+    icon: {fileID: 21300000, guid: 2f62ee22ffdbfd54982290967f7dc0af, type: 3}
+    desp: Slowed for 3 seconds
+    showOnUI: 0
+    hitChance: 1
+    duration: 4
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 0.5
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 1
+    name: Stun
+    icon: {fileID: 21300000, guid: 66dbdb397006d4e4e837f1dce393f525, type: 3}
+    desp: Stunned for 3 seconds
+    showOnUI: 0
+    hitChance: 1
+    duration: 4
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 1
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 10
+    name: Stun_Short
+    icon: {fileID: 21300000, guid: 66dbdb397006d4e4e837f1dce393f525, type: 3}
+    desp: 
+    showOnUI: 0
+    hitChance: 1
+    duration: 1
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 1
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 2
+    name: Damage Boost
+    icon: {fileID: 21300000, guid: 2f3ba5f781743c34c8816fad48124081, type: 3}
+    desp: Damage output is doubled for 5 seconds
+    showOnUI: 1
+    hitChance: 1
+    duration: 6
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 2
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 3
+    name: Critical Boost
+    icon: {fileID: 21300000, guid: 885d97b800d32014fae9137cfe61c8b3, type: 3}
+    desp: Increase critical chance by 100% for 5 seconds
+    showOnUI: 1
+    hitChance: 1
+    duration: 6
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 5
+    critMultiplierMul: 2
+    expired: 0
+  - ID: 4
+    name: Restore HitPoint
+    icon: {fileID: 21300000, guid: 30d450cf9c95b20439cb0c2cb68ac550, type: 3}
+    desp: Restore 25 HitPoint over the period of 5 seconds
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: 6
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 5
+    name: Restore Energy
+    icon: {fileID: 21300000, guid: 57eff775354597e4abd297e2c3d24341, type: 3}
+    desp: Restore 25 energy over the period of 5 seconds
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: 0
+    restoreEnergy: 6
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 6
+    name: Blood Lust
+    icon: {fileID: 21300000, guid: 85239e80611008948ad8a3a7e0636015, type: 3}
+    desp: Drain HitPoint to double damage output and critical chance for 5 second.
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: -2
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 2
+    critChanceMul: 2
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 7
+    name: Speed Boost
+    icon: {fileID: 21300000, guid: f84dafb7a8ef6fb4e977200d5dd4c392, type: 3}
+    desp: Double movement speed for 5 seconds
+    showOnUI: 1
+    hitChance: 1
+    duration: 5
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1.5
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 8
+    name: Damage Over Time
+    icon: {fileID: 21300000, guid: 2f40412feb2cd4b419f92d26b1e8dd59, type: 3}
+    desp: Cause 15 damage over 3 seconds.
+    showOnUI: 1
+    hitChance: 1
+    duration: 3
+    restoreHitPoint: -2
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 0
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
+  - ID: 9
+    name: Invincible
+    icon: {fileID: 21300000, guid: 36d4334467d3aed4abc8621a0357f71f, type: 3}
+    desp: Immune to all damage and effect for 6 seconds
+    showOnUI: 1
+    hitChance: 1
+    duration: 6
+    restoreHitPoint: 0
+    restoreEnergy: 0
+    speedMul: 1
+    stun: 0
+    invincible: 1
+    damageMul: 1
+    critChanceMul: 1
+    critMultiplierMul: 1
+    expired: 0
